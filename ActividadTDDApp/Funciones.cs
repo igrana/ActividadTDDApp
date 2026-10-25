@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using System.Text;
 
 namespace ActividadTDDApp
@@ -8,13 +9,27 @@ namespace ActividadTDDApp
     {
         public static int CalcularFactorial(int n)
         {
-            throw new NotImplementedException();
+            if (n < 0)
+                return -1;
+
+            if (n == 0)
+                return 1;
+
+            int factorial = 1;
+
+            for (int i = 1; i <= n; i++)
+            {
+                factorial = factorial * i;
+            }
+
+            return factorial;
         }
 
         public static bool EsContrasenyaValida(string contrasenya)
         {
             throw new NotImplementedException();
         }
+
     }
 }
 //isgrpa2526
