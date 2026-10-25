@@ -12,14 +12,11 @@ namespace ActividadTDDApp
             if (n < 0)
                 return -1;
 
-            if (n == 0)
-                return 1;
-
             int factorial = 1;
 
-            for (int i = 1; i <= n; i++)
+            for (int i = 2; i <= n; i++)
             {
-                factorial = factorial * i;
+                factorial *= i;
             }
 
             return factorial;
