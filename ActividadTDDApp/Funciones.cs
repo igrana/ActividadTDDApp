@@ -6,5 +6,9 @@ namespace ActividadTDDApp
 {
     public class Funciones
     {
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
