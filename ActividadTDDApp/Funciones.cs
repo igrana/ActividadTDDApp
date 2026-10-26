@@ -11,9 +11,39 @@ namespace ActividadTDDApp
             throw new NotImplementedException();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public static bool EsContrasenyaValida(string contrasenya)
         {
-            throw new NotImplementedException();
+
+            if (contrasenya == "")
+                return false;
+
+            if (contrasenya == null)
+                return false;
+
+            if (contrasenya.Length < 8)
+                return false;
+
+            if (!contrasenya.Contains("#"))
+                return false;
+
+            return true;
         }
     }
 }
