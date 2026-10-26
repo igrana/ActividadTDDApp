@@ -22,23 +22,6 @@ namespace ActividadTDDApp
             return factorial;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public static bool EsContrasenyaValida(string contrasenya)
         {
             return contrasenya != "" &&
